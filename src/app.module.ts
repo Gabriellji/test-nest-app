@@ -7,7 +7,12 @@ import { CoffeeRatingModule } from './coffee-rating/coffee-rating.module';
 import { DatabaseModule } from './database/database.module';
 
 @Module({
-  imports: [CoffeesModule, TypeOrmModule.forRoot(), CoffeeRatingModule, DatabaseModule],
+  imports: [
+    CoffeesModule,
+    TypeOrmModule.forRoot(),
+    CoffeeRatingModule,
+    DatabaseModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
